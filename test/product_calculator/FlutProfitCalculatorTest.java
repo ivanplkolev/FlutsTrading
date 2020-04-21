@@ -1,13 +1,13 @@
 package product_calculator;
 
 import main.product.Flut;
-import main.profit_calculator.FlutProductProfitCalculator;
+import main.profit_calculator.FlutProfitCalculator;
 import main.profit_calculator.ProfitCalculator;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 
-public class FlutProductProfitCalculatorTest {
+public class FlutProfitCalculatorTest {
 
 
     @Test
@@ -18,7 +18,7 @@ public class FlutProductProfitCalculatorTest {
         Flut flut3 = new Flut(10);
         Flut flut4 = new Flut(30);
 
-        ProfitCalculator profitCalculator = new FlutProductProfitCalculator();
+        ProfitCalculator profitCalculator = new FlutProfitCalculator();
 
         assertEquals(9, profitCalculator.getProfit(flut1));
         assertEquals(5, profitCalculator.getProfit(flut2));

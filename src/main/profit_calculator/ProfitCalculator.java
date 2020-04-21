@@ -16,7 +16,7 @@ public interface ProfitCalculator<T extends Product> {
      * This is the template method for calculating the profit
      * The used design pattern is Template
      *
-     * @param p -  the product which profit we need to calculate
+     * @param p -  the product which profit which needs to be calculated
      * @return the amount of the profit
      */
     default int getProfit(T p) {

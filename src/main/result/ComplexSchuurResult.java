@@ -25,7 +25,7 @@ public class ComplexSchuurResult extends SingleSchuurResult {
 
     /**
      * This is the merging method
-     *
+     * It accomulates the single results from some schuurs
      *
      * @param other the merged SingleSchuurResult
      */

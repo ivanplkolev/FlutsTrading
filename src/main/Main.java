@@ -1,15 +1,22 @@
 package main;
 
-import main.market_analyzer.MarketComputer;
+import main.market_analyzer.MarketAnalyzer;
 import main.product.Flut;
 import main.product.ProductPile;
 import main.product.Schuur;
-import main.profit_calculator.FlutProductProfitCalculator;
+import main.profit_calculator.FlutProfitCalculator;
 import main.result.ComplexSchuurResult;
 
 import java.util.Scanner;
 
 public class Main {
+
+
+    /**
+     * Here We create the MarketAnalyzer object
+     * and inject the Profit calculator
+     */
+    private static MarketAnalyzer marketAnalyzer = new MarketAnalyzer(new FlutProfitCalculator());
 
     public static void main(String... args) {
 
@@ -31,9 +38,7 @@ public class Main {
                 schuurs[i] = schuur;
             }
 
-            MarketComputer marketComputer = new MarketComputer(new FlutProductProfitCalculator());
-
-            ComplexSchuurResult result = marketComputer.calculateTotalProfit(schuurs);
+            ComplexSchuurResult result = marketAnalyzer.calculateTotalProfit(schuurs);
 
             System.out.println(result);
 

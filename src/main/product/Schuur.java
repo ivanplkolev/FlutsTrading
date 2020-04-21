@@ -7,7 +7,10 @@ import java.util.Queue;
 public class Schuur implements ProductPile<Flut> {
 
     /*
-    * As the Schuur is a FIFO structure I am using Stack
+    * As the Schuur is a FIFO structure
+    * since the 1st read Flut from the input is actually at the top of the pile
+    * and this is also the 1st bought flut
+    * Queue structure is used
     *
     **/
     private Queue<Flut> fluts = new LinkedList<>();
@@ -18,8 +21,8 @@ public class Schuur implements ProductPile<Flut> {
     }
 
     /*
-    * The check of the proces of the fluts will restroy the order od the fluts
-    * because of that I am checking a shallow copu of the schuur
+    * The check of the proces of the fluts will destroy the structure
+    * because of that if no destroy is needed use a shallow copy of the Schuur object
     *
     **/
     @Override

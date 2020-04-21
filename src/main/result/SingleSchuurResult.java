@@ -7,7 +7,7 @@ import java.util.stream.Stream;
 
 
 /**
- * This class represnt the result of computation the profit from a singgle schuur
+ * This class represnts the result of computation the profit from a single schuur
  */
 public class SingleSchuurResult {
 

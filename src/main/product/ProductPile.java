@@ -2,7 +2,7 @@ package main.product;
 
 
 /**
- * Interface represents a pile of products such as the Schuur
+ * Interface represents a pile of products such as the Schuur's Pile
  */
 public interface ProductPile<T extends Product> {
 
